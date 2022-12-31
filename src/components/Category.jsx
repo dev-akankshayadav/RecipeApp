@@ -7,19 +7,19 @@ import { NavLink } from "react-router-dom";
 const Category = () => {
   return (
     <List>
-      <SLink to={"/cuisine/Italian"}>
+      <SLink to={"/cuisine/Italian"} title="Italian dishes">
         <FaPizzaSlice />
         <h4>Italian</h4>
       </SLink>
-      <SLink to={"/cuisine/American"}>
+      <SLink to={"/cuisine/American"} title="American dishes">
         <FaHamburger />
         <h4>American</h4>
       </SLink>
-      <SLink to={"/cuisine/Thai"}>
+      <SLink to={"/cuisine/Thai"} title="Thai dishes">
         <GiNoodles />
         <h4>Thai</h4>
       </SLink>
-      <SLink to={"/cuisine/Japanese"} >
+      <SLink to={"/cuisine/Japanese"} title="Japanese dishes" >
          <GiChopsticks />
         <h4>Japanese</h4>
       </SLink>
@@ -70,6 +70,9 @@ const SLink = styled(NavLink)`
   svg:hover{
     opacity: 0.5;
   }
+  h4:hover {
+    color: grey;
+  }
   &.active {
     background: linear-gradient(to right, #f27121, #e94057);
 
@@ -80,6 +83,7 @@ const SLink = styled(NavLink)`
     h4 {
       color: white;
     }
+   
   }
 `;
 
