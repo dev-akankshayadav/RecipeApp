@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Nav>
+      <Nav title="Home">
         <GiKnifeFork />
         <Logo to={'/'}> Scrumptious </Logo>
       </Nav>
@@ -27,8 +27,8 @@ font-size: 1.5rem;
 font-weight: 400;
 font-family: 'Lobstor Two', cursive;
 
-Logo:hover{
-  opacity: 0.2;
+Logo:hover {
+  opacity: 0.5;
 }`;
 
 const Nav = styled.div`
