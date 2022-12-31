@@ -58,9 +58,10 @@ const Recipe = () => {
 };
 
 const DetailWrapper = styled.div`
-  margin-top: 10rem;
-  marin-bottom: 5rem;
+  margin-top: 3rem;
   display: flex;
+  flex-direction: column;
+
   .active {
     background: linear-gradient(35deg, #494949, #313131);
     color: white;
@@ -77,7 +78,8 @@ const DetailWrapper = styled.div`
   }
   img {
     width: 100%;
-    border-radius: 2rem;
+    height: 80%;
+    border-radius: 5px;
   }
 `;
 
@@ -86,6 +88,7 @@ const Button = styled.button`
   color: #313131;
   background: white;
   border: 2px solid black;
+  border-radius: 5px;
   margin-right: 2rem;
   font-weight: 500;
 `;
